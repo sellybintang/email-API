@@ -6,7 +6,7 @@ exports.transporter = nodemailer.createTransport({
   // port: "465",
   service: "gmail",
   auth: {
-    user: "melanand4@gmail.com",
-    pass: "tcrdtmlijurwfmhx",
+    user: process.env.GMAIL,
+    pass: process.env.PASS,
   },
 });
